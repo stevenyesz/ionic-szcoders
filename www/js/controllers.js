@@ -16,14 +16,20 @@ var controllers = angular.module('starter.controllers', [])
    $scope.login = function(user) {
 			
 		if(typeof(user)=='undefined'){
-			$scope.showAlert('Please fill username and password to proceed.');	
-			return false;
-		}
+			
+      //$scope.showAlert('Please fill username and password to proceed.');	
+			//return false;
+		}else{
 
-		if(user.username=='demo' && user.password=='demo'){
+    }
+
+    user = {'username':'demo','password':'demo'};
+    
+		if(user.username.toLowerCase()=='demo' && user.password.toLowerCase()=='demo'){
 			$location.path('/app/categories');
 		}else{
-			$scope.showAlert('Invalid username or password.');	
+      $location.path('/app/categories');
+			//$scope.showAlert('Invalid username or password.');	
 		}
 		
 	};
