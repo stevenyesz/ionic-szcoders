@@ -1,0 +1,14 @@
+<ion-view view-title="程序员" >
+  <ion-content>
+    <!-- HTML structure provided by ionic-->
+    <div class="list">
+      <!-- ng-repeat is angular's way of looping through lists-->
+      <a class="item"
+         href="#/app/categories/{{category.tid[0].value}}"
+         ng-repeat="category in categories">
+
+        {{category.name[0].value}}
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

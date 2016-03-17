@@ -1,0 +1,30 @@
+<ion-view view-title="Category">
+  <ion-nav-title>
+    {{ category.name[0].value }}
+  </ion-nav-title>
+
+  <ion-content>
+    <!-- HTML structure provided by ionic-->
+    <div class="list">
+      <!-- ng-repeat is angular's way of looping through lists-->
+      <a class="item"
+         href="#/app/articles/{{article.nid[0].value}}"
+         ng-repeat="article in articles">
+
+        {{article.title[0].value}}
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
+
+<ion-view view-title="OST Team">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="article in articles" class="item item-avatar" href="#/app/articles/{{article.nid[0].value}}">
+       <img ng-src="{{ article.field_face[0].url }}">
+       <h2>{{article.title[0].value}}</h2>
+      <p>{{article.body[0].summary}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
