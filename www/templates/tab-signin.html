@@ -18,14 +18,18 @@
 			  <label class="item item-input"><input type="password" ng-model="user.password" placeholder="demo" > </label>
 			</div>
 
-			<div class="loginButton"><button class="button ion-unlocked button-block button-balanced" ng-click="login(user);" > 开始 </button>  </div>
+			<div class="loginButton"><button class="button ion-unlocked button-block button-balanced" ng-click="login(user);" > 登录 </button>  </div>
 	  </div>
   </div>
 
 
 	<div class="row  padding removePM">
-	  <div class="col"> <a class=" button-positive button button-block" href="http://wap.xixicard.com/szcoders.apk" ng-click="facebookSignIn()"><i class="icon ion-social-android"></i></a> </div>
-	  <div class="col"> <a class="button-calm button button-block" ng-click="twitterSignIn()"><i class="icon ion-social-apple-outline"></i></a> </div>
+	  <div class="col"> <a class=" button-positive button button-block" href="#" ng-click="dlandroid()"><i class="icon ion-social-android"></i></a> </div>
+	  <div class="col"> <a class="button-calm button button-block" ><i class="icon ion-social-apple-outline"></i></a> </div>
+	</div>
+	<div class="row  padding removePM">
+	  <div class="col"> <a class=" button-positive button button-block" href="#" ng-click="showAlert('http://d8.xixicard.com')"><i class="icon ion-android-laptop"></i></a> </div>
+	  <div class="col"> <a class="button-calm button button-block" ng-click="showAlert('http://wap.xixicard.com')"><i class="icon ion-chatbubbles"></i></a> </div>
 	</div>
 
   </ion-content>

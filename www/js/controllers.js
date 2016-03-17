@@ -35,6 +35,7 @@ var controllers = angular.module('starter.controllers', [])
 	};
   //--------------------------------------------
   $scope.logout = function() {   $location.path('/app/login');   };
+  $scope.dlandroid = function() { $scope.showAlert('http://wap.xixicard.com/szcoders.apk');}
   //--------------------------------------------
    // An alert dialog
 	 $scope.showAlert = function(msg) {
